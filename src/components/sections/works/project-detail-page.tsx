@@ -99,7 +99,7 @@ export function ProjectDetailPage({ project }: ProjectDetailPageProps) {
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Link
-                  href="mailto:hello@yudesign.com"
+                  href="mailto:yu.design.tw@gmail.com"
                   className="inline-flex items-center justify-center px-8 py-4 bg-black text-white rounded-full hover:bg-gray-800 transition-colors text-lg font-medium"
                 >
                   開始對話

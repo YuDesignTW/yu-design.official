@@ -1,0 +1,306 @@
+@media (max-width: 680px) {
+  .yg-nav {
+    padding: 22px 24px;
+    height: 88px;
+  }
+  .yg-logo {
+    font-size: 15px;
+  }
+  .yg-nav nav {
+    display: none;
+  }
+  .yg-menu {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    visibility: visible;
+    top: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+  }
+  .yg-menu:not(.is-scrolled) {
+    background: transparent;
+    border: 1px solid currentColor;
+    color: var(--ink);
+  }
+  .yg-home .yg-menu:not(.is-scrolled) {
+    color: white;
+  }
+  .yg-menu svg {
+    width: 21px;
+  }
+  .yg-menu.is-scrolled {
+    width: 56px;
+    height: 56px;
+  }
+  .yg-drawer {
+    padding: 120px 32px 35px;
+  }
+  .yg-drawer-close {
+    right: 22px;
+    top: 20px;
+    width: 56px;
+    height: 56px;
+  }
+  .yg-drawer nav a {
+    font-size: 41px;
+    padding: 10px 0;
+  }
+  .yg-drawer nav small {
+    font-size: 13px;
+  }
+  .yg-drawer-bottom {
+    padding-top: 35px;
+  }
+  .yg-hero {
+    height: 100svh;
+    min-height: 680px;
+    max-height: 950px;
+  }
+  .yg-portrait img {
+    height: 63%;
+    max-width: 80%;
+    bottom: 0;
+    right: 0;
+    filter: saturate(0.7);
+  }
+  .yg-hero-foot {
+    bottom: 22px;
+    left: 24px;
+    right: 24px;
+    gap: 12px;
+  }
+  .yg-hero-foot > span {
+    display: none;
+  }
+  .yg-hero-foot > a {
+    font-size: 8px;
+  }
+  .yg-motion-toggle {
+    width: 29px;
+    height: 29px;
+  }
+  .yg-section {
+    padding: 75px 24px;
+  }
+  .yg-intro {
+    display: block;
+    padding-bottom: 55px;
+  }
+  .yg-intro-heading h2 {
+    font-size: 26px;
+    line-height: 1.65;
+    margin-top: 25px;
+  }
+  .yg-intro-side {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-top: 30px;
+  }
+  .yg-intro-side > p {
+    font-size: 12px;
+    line-height: 1.95;
+    flex: 1;
+  }
+  .yg-intro-side .yg-circle {
+    margin-top: 0;
+    width: 115px;
+    height: 115px;
+    font-size: 12px;
+  }
+  .yg-label {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+  .yg-work {
+    padding-top: 35px;
+    padding-bottom: 60px;
+  }
+  .yg-work-heading h2 {
+    font-size: 36px;
+  }
+  .yg-filters {
+    gap: 6px;
+  }
+  .yg-filters button {
+    font-size: 10px;
+    padding: 9px 12px;
+  }
+  .yg-film {
+    padding: 0 0 20px;
+  }
+  .yg-film-window {
+    margin-bottom: 12px;
+  }
+  .yg-film-track {
+    gap: 12px;
+    width: 210%;
+    left: -55%;
+  }
+  .yg-film-track > a {
+    padding: 20px;
+    aspect-ratio: 1.35;
+  }
+  .yg-film-track span {
+    left: 12px;
+    bottom: 8px;
+    font-size: 8px;
+  }
+  .yg-film-track span svg {
+    width: 12px;
+  }
+  .yg-section-title {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .yg-section-title h2 {
+    font-size: 36px;
+    width: auto;
+    margin-top: 20px;
+  }
+  .yg-capabilities {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+  .yg-capability-number {
+    padding-bottom: 15px;
+  }
+  .yg-capabilities h3 {
+    font-size: 30px;
+    margin: 20px 0 18px;
+  }
+  .yg-capabilities h3 small {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  .yg-capabilities p {
+    font-size: 14px;
+  }
+  .yg-skills {
+    margin-top: 16px;
+    font-size: 11px;
+  }
+  .yg-capabilities a {
+    margin-top: 18px;
+  }
+  .yg-about {
+    border-radius: 0 0 50% 50% / 0 0 25px 25px;
+    padding-bottom: 95px;
+  }
+  .yg-about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .yg-about-photo {
+    max-width: 280px;
+  }
+  .yg-about-copy h2 {
+    font-size: 33px;
+  }
+  .yg-about-copy > p:not(.yg-label) {
+    font-size: 13px;
+  }
+  .yg-principles {
+    font-size: 13px;
+  }
+  .yg-experience {
+    margin-top: 70px;
+  }
+  .yg-timeline {
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding: 24px 0;
+  }
+  .yg-timeline h3 {
+    font-size: 21px;
+  }
+  .yg-resumes {
+    gap: 20px;
+    font-size: 11px;
+  }
+  .yg-resumes > span {
+    width: 100%;
+  }
+  .yg-contact {
+    padding: 125px 24px 25px;
+  }
+  .yg-contact-inner {
+    padding: 0;
+  }
+  .yg-contact h2 {
+    font-size: 42px;
+    margin: 30px 0 70px;
+    line-height: 1.5;
+  }
+  .yg-contact h2 img {
+    width: 44px;
+    height: 44px;
+    margin-right: 12px;
+  }
+  .yg-contact h2 > svg {
+    width: 25px;
+    right: 0;
+    top: auto;
+    bottom: 12px;
+  }
+  .yg-contact-rule .yg-circle {
+    width: 120px;
+    height: 120px;
+    top: -60px;
+    right: 2%;
+    font-size: 12px;
+  }
+  .yg-contact-links {
+    margin-top: 90px;
+    display: block;
+  }
+  .yg-contact-links .yg-outline {
+    padding: 18px 23px;
+    font-size: 13px;
+  }
+  .yg-contact-links p {
+    font-size: 12px;
+    margin-top: 24px;
+  }
+  .yg-bottom {
+    margin-top: 60px;
+    gap: 30px;
+    font-size: 10px;
+    flex-wrap: wrap;
+  }
+  .yg-bottom > div {
+    gap: 10px;
+  }
+  .yg-footer-cv {
+    margin-left: 0;
+  }
+  .yg-case {
+    padding: 30px 24px 85px;
+  }
+  .yg-case h1 {
+    font-size: 43px;
+  }
+  .yg-case-facts {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .yg-case-intro {
+    font-size: 15px;
+  }
+  .yg-case-sections section {
+    grid-template-columns: 25px 1fr;
+    gap: 10px;
+  }
+  .yg-case-sections p {
+    grid-column: 2;
+    font-size: 14px;
+  }
+  .yg-case-sections h2 {
+    font-size: 21px;
+  }
+  .yg-next h2 {
+    font-size: 28px;
+  }
+}

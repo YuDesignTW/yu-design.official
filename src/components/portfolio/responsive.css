@@ -1,0 +1,88 @@
+@media (min-width: 1700px) {
+  .yg-section {
+    padding-left: max(10vw, calc((100vw - 1400px) / 2));
+    padding-right: max(10vw, calc((100vw - 1400px) / 2));
+  }
+}
+@media (max-width: 1100px) {
+  .yg-section {
+    padding: 95px 7vw;
+  }
+  .yg-intro {
+    gap: 6vw;
+  }
+  .yg-intro-heading h2 {
+    font-size: 30px;
+  }
+  .yg-work {
+    padding-top: 20px;
+  }
+  .yg-capabilities {
+    gap: 28px;
+  }
+  .yg-about-grid {
+    gap: 7vw;
+  }
+  .yg-contact-inner {
+    padding: 0 3vw;
+  }
+}
+@media (max-width: 900px) {
+  .yg-work-heading {
+    display: block;
+  }
+  .yg-filters {
+    margin-top: 25px;
+  }
+  .yg-count {
+    margin-top: 28px !important;
+  }
+  .yg-portrait img {
+    height: 85%;
+    bottom: 0;
+  }
+  .yg-capabilities h3 {
+    font-size: 25px;
+  }
+  .yg-capabilities p {
+    font-size: 13px;
+  }
+  .yg-film-track > a {
+    padding: 25px;
+  }
+  .yg-film-track {
+    width: 145%;
+    left: -22%;
+  }
+  .yg-timeline {
+    grid-template-columns: 0.8fr 1.2fr 1.5fr;
+  }
+  .yg-contact-links {
+    gap: 25px;
+  }
+  .yg-contact-links .yg-outline {
+    font-size: 14px;
+    padding: 20px 28px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  .yg *,
+  .yg *::before,
+  .yg *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .yg-portrait,
+  .yg-name-offset,
+  .yg-film-track,
+  .yg-magnetic {
+    transform: none !important;
+  }
+  .yg-motion-toggle {
+    display: none;
+  }
+}

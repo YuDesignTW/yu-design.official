@@ -1,0 +1,100 @@
+.yg-services-marquee {
+  position: relative;
+  overflow: hidden;
+  border-block: 1px solid var(--line);
+  padding: 30px 0;
+  background: #fff;
+}
+.yg-services-track {
+  display: flex;
+  width: max-content;
+  animation: yg-service-scroll 55s linear infinite;
+  font-size: clamp(36px, 5.5vw, 80px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+.yg-services-track > span {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.yg-services-track i {
+  font-style: normal;
+  color: var(--accent);
+  padding: 0 0.18em;
+}
+.yg-services-track.is-paused {
+  animation-play-state: paused;
+}
+.yg-services-pause {
+  position: absolute;
+  right: 16px;
+  bottom: 8px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ink);
+}
+.yg-footer-brand {
+  max-width: 480px;
+  flex: 1;
+}
+.yg-footer-brand .yg-footer-company {
+  font-size: 23px;
+}
+.yg-footer-brand p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #bdbdb9;
+}
+.yg-footer-social {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 8px 0;
+}
+.yg-footer-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+}
+.yg-footer-social a:hover {
+  color: #d1b365;
+}
+.yg-footer-brand address {
+  font-style: normal;
+  color: #a4a5a7;
+  line-height: 1.9;
+  font-size: 12px;
+}
+.yg-footer-brand small {
+  color: #a4a5a7;
+  font-size: 11px;
+}
+@keyframes yg-service-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 680px) {
+  .yg-footer-brand {
+    flex-basis: 100%;
+    max-width: none;
+  }
+  .yg-services-marquee {
+    padding: 26px 0 38px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .yg-services-track {
+    animation: none;
+  }
+  .yg-services-pause {
+    display: none;
+  }
+}

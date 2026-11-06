@@ -22,21 +22,21 @@ jobs:
         uses: actions/checkout@v4
 
       - name: 設定 pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v4
         with:
           version: 9
 
       - name: 設定 Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'pnpm'
 
       - name: 安裝依賴
         run: pnpm install --frozen-lockfile
 
       - name: 設定 Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
         with:
           static_site_generator: next
 
