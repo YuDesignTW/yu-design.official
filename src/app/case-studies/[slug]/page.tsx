@@ -76,6 +76,14 @@ export default async function CasePage({
             </section>
           ))}
         </div>
+        {"gallery" in s && s.gallery?.map((item) => (
+          <figure key={item.image}>
+            <a href={item.image} target="_blank" rel="noreferrer" aria-label={`開啟完整圖片：${item.caption}`}>
+              <img src={item.image} alt={item.caption} loading="lazy" />
+            </a>
+            <figcaption>{item.caption}</figcaption>
+          </figure>
+        ))}
         {s.source && (
           <a
             className="yg-back"

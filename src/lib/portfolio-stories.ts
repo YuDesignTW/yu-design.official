@@ -21,13 +21,15 @@ export const pillars = [
     skills: "AI 工具 / 產品開發 / 系統整合",
   },
 ];
+export const workTags = ["AI", "IoT", "Business", "Design"];
+
 export const stories = [
   {
     slug: "ideacam",
     name: "BenQ ideaCam × EnSpire",
     title: "從產品決策、體驗設計到上市營運",
     category: 0,
-    tags: ["商業", "品牌與設計"],
+    tags: ["Business", "Design"],
     image: "/images/project/project 1/product-1.jpg",
     caption: "BenQ ideaCam 雙模式攝影機產品展示",
     metric: "NT$5,000 萬",
@@ -65,11 +67,60 @@ export const stories = [
     source: "https://yu-design.tw/works/project-1/",
   },
   {
+    slug: "seachat",
+    name: "SeaChat AI Chatbot",
+    title: "把使用者需求，轉成多通路 AI 對話體驗",
+    category: 2,
+    tags: ["AI", "Business", "Design"],
+    image: "/images/cases/seachat/overview.png",
+    caption: "SeaChat LINE AI 對話助理產品介紹",
+    metric: "25+ 項功能",
+    metricLabel: "三個月內交付",
+    detail: "需求拆解、UX/UI 文件、第三方服務串接與跨國開發協作",
+    role: "產品經理、UX 設計與 QA｜需求規劃、User Flow、Figma 文件與跨國團隊協作",
+    intro:
+      "在 Seasalt.ai，我負責 SeaChat 的產品開發，將企業與使用者需求整理成多通路 AI Chatbot 的功能與操作流程。透過 UX/UI 文件、需求拆解與跨時區協作，三個月內交付 25 項以上新功能，涵蓋 LINE 優化、WhatsApp、Messenger 與 Google Calendar 串接。",
+    sections: [
+      [
+        "需求與挑戰｜讓 AI 對話接上不同服務情境",
+        "SeaChat 需要支援不同通訊管道，並在對話過程中收集使用者背景資訊。我的工作是將這些需求拆解成具體的功能與流程，讓開發團隊清楚理解操作情境、介面狀態與服務之間的關係。",
+      ],
+      [
+        "體驗設計｜把操作規則寫進 UX/UI 文件",
+        "我建立有系統的 UX/UI 文件，以 Figma 整理 User Flow、介面與操作規則。例如 AI Agent 的回覆時段設定、啟用與停用狀態，以及 AI 與真人客服之間的切換，都需要在設計階段說清楚，作為開發與 QA 的共同依據。",
+      ],
+      [
+        "產品溝通｜讓功能用途被理解",
+        "在規劃功能時，我也一併考慮網站內容與行銷呈現。透過 Use Case Library 的介面與情境說明，將聊天、問卷、預約等用途呈現給使用者，讓產品功能與對外溝通使用一致的脈絡。",
+      ],
+      [
+        "開發協作｜把大需求拆成能交付的小任務",
+        "我將大型需求切成多數可在兩到三天內完成的 issue，並用完整文件支援跨國、跨時區的遠端團隊。遇到 Bug 或流程問題時，透過直接溝通確認調整方式，讓團隊能持續交付並聚焦高價值的工作。",
+      ],
+      [
+        "成果｜三個月交付 25 項以上新功能",
+        "以使用者需求推進 Chatbot 功能，完成 LINE 優化及 WhatsApp、Messenger、Google Calendar 等第三方服務串接。這段經驗結合產品規劃、UX 設計與品質確認，也讓我建立以清楚文件和小步迭代推進遠端協作的工作方式。",
+      ],
+    ],
+    gallery: [
+      {
+        image: "/images/cases/seachat/user-flows.png",
+        caption: "Figma UX/UI 文件：AI Agent 回覆時段設定與 AI／真人客服切換流程",
+      },
+      {
+        image: "/images/cases/seachat/interface.png",
+        caption: "SeaChat Use Case Library：產品介面與使用情境的行銷設計",
+      },
+    ],
+    source:
+      "https://happy-daisy-0c0.notion.site/SeaChat-AI-Powered-Chatbot-fa765ae5fd42424484535c5e442d8de9?pvs=74",
+  },
+  {
     slug: "design-system",
     name: "Brand Design System",
     title: "用一套工作系統，推進十個品牌的設計",
     category: 1,
-    tags: ["品牌與設計", "技術開發", "商業"],
+    tags: ["AI", "Business", "Design"],
     image: "/images/editorial/design-system.jpg",
     caption: "設計研究工作台既有畫面；目前版本持續演進",
     metric: "1 週 / 10 品牌",
@@ -110,7 +161,7 @@ export const stories = [
     name: "IoT 能源管理系統",
     title: "把多方需求，整合成現場可用的管理系統",
     category: 2,
-    tags: ["技術開發", "品牌與設計"],
+    tags: ["IoT", "Design"],
     image: "/images/cases/energy/overview.png",
     caption: "能源管理系統既有實作畫面",
     metric: "批量排程",
@@ -151,7 +202,7 @@ export const stories = [
     name: "YuLab 有料研究室",
     title: "把品牌脈絡，接上 AI 行銷規劃",
     category: 2,
-    tags: ["技術開發", "商業", "品牌與設計"],
+    tags: ["AI", "Business", "Design"],
     image: "/images/editorial/yulab.jpg",
     caption: "YuLab 既有操作影片：行銷排程畫面",
     metric: "80–90%",
@@ -193,7 +244,7 @@ export const stories = [
     name: "防災避難準備工具",
     title: "把分散的資訊，變成能行動的產品",
     category: 0,
-    tags: ["商業", "品牌與設計", "技術開發"],
+    tags: ["AI", "Business", "Design"],
     image: "/images/cases/disaster/product-0.png",
     caption: "居家避難準備指南｜防災物資清單工具既有畫面",
     metric: "NT$70 萬+",

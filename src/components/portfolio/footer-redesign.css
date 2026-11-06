@@ -65,10 +65,6 @@
 .yg-footer-copyright a:hover {
   color: #d1b365;
 }
-.yg-work-result span {
-  max-width: 210px;
-  line-height: 1.6;
-}
 @media (max-width: 680px) {
   .yg-footer-invitation {
     flex-direction: column;

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
-import { pillars, stories } from "@/lib/portfolio-stories";
+import { workTags, stories } from "@/lib/portfolio-stories";
 
 export function WorkList() {
   const cursor = useRef<HTMLDivElement>(null);
@@ -18,21 +18,21 @@ export function WorkList() {
     };
   }, []);
   const visible = stories.filter(
-    (s) => filter < 0 || s.tags.includes(pillars[filter].name),
+    (s) => filter < 0 || s.tags.includes(workTags[filter]),
   );
   return (
     <section className="yg-work yg-section" id="work">
       <div className="yg-work-heading">
         <div>
-          <p className="yg-label">SELECTED WORK / 01—05</p>
+          <p className="yg-label">SELECTED WORK / 01—{String(stories.length).padStart(2, "0")}</p>
           <h2>
             讓能力，
             <br />
             成為實際成果。
           </h2>
         </div>
-        <div className="yg-filters" aria-label="依能力篩選案例">
-          {["全部", ...pillars.map((p) => p.name)].map((name, i) => (
+        <div className="yg-filters" aria-label="依標籤篩選案例">
+          {["全部", ...workTags].map((name, i) => (
             <button
               key={name}
               aria-pressed={filter === i - 1}
@@ -81,10 +81,11 @@ export function WorkList() {
                 <h3>{s.name}</h3>
                 <p>{s.title}</p>
               </div>
-              <div className="yg-work-result">
-                <strong>{s.metric}</strong>
-                <span>{s.metricLabel}</span>
-              </div>
+              <ul className="yg-work-tags" aria-label="專案標籤">
+                {s.tags.map((tag) => (
+                  <li key={tag}>{tag}</li>
+                ))}
+              </ul>
             </div>
             <ArrowUpRight className="yg-row-arrow" aria-hidden="true" />
           </a>
@@ -99,7 +100,7 @@ export function WorkList() {
 export function WorkFilm() {
   return (
     <section className="yg-film" aria-label="作品畫面選輯">
-      {[stories.slice(0, 3), stories.slice(2, 5)].map((row, i) => (
+      {[stories.slice(0, 3), stories.slice(3)].map((row, i) => (
         <div className="yg-film-window" key={i}>
           <div className="yg-film-track">
             {row.map((s) => (
