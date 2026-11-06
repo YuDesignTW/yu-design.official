@@ -5,9 +5,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  experimental: {
-    typedRoutes: true,
-  },
+  typedRoutes: true,
   // 處理可能的重複網址問題
   async redirects() {
     return [

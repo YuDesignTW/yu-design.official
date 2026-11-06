@@ -7,9 +7,7 @@ const nextConfig = {
     unoptimized: true,
     domains: ['images.unsplash.com', 'randomuser.me'],
   },
-  experimental: {
-    typedRoutes: true,
-  },
+  typedRoutes: true,
   // 自訂網域部署設定 - 不需要 basePath 和 assetPrefix
 }
 
