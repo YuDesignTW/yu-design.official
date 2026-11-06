@@ -72,8 +72,8 @@ export const stories = [
     title: "把使用者需求，轉成多通路 AI 對話體驗",
     category: 2,
     tags: ["AI", "Business", "Design"],
-    image: "/images/cases/seachat/overview.png",
-    caption: "SeaChat LINE AI 對話助理產品介紹",
+    image: "/images/cases/seachat/features-overview.png",
+    caption: "SeaChat 功能與介面總覽：知識庫、通路串接、預約與對話外觀設定",
     metric: "25+ 項功能",
     metricLabel: "三個月內交付",
     detail: "需求拆解、UX/UI 文件、第三方服務串接與跨國開發協作",
@@ -103,6 +103,10 @@ export const stories = [
       ],
     ],
     gallery: [
+      {
+        image: "/images/cases/seachat/overview.png",
+        caption: "SeaChat LINE AI 對話助理產品介紹",
+      },
       {
         image: "/images/cases/seachat/user-flows.png",
         caption: "Figma UX/UI 文件：AI Agent 回覆時段設定與 AI／真人客服切換流程",
