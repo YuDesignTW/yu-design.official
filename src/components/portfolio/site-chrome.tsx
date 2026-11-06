@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { MagneticLink } from "./interactions";
@@ -36,14 +37,14 @@ export function SiteNav({ home = false }: { home?: boolean }) {
   return (
     <>
       <header className={`yg-nav ${home ? "yg-nav-home" : ""}`}>
-        <a href="/" className="yg-logo" aria-label="Yuga Chen 首頁">
+        <Link href="/" className="yg-logo" aria-label="Yuga Chen 首頁">
           <img
             src={home ? "/images/logo.png" : "/images/dark_logo.png"}
             alt="YU DESIGN"
             width="1248"
             height="265"
           />
-        </a>
+        </Link>
         <nav aria-label="主要導覽">
           {links
             .filter((_, i) => i !== 2)
@@ -144,14 +145,14 @@ export function Contact() {
         </div>
         <div className="yg-footer-identity">
           <div className="yg-footer-wordmark">
-            <a href="/" aria-label="YuDesign 首頁">
+            <Link href="/" aria-label="YuDesign 首頁">
               <img
                 src="/images/logo.png"
                 alt="YU DESIGN"
                 width={1248}
                 height={265}
               />
-            </a>
+            </Link>
             <p>懂設計、開發與行銷的產品顧問。</p>
           </div>
           <div className="yg-footer-connect">
@@ -188,9 +189,9 @@ export function Contact() {
         </div>
         <div className="yg-footer-copyright">
           <small>2026 © YuDesign / Yuga Chen</small>
-          <a href="/#work">
+          <Link href="/#work">
             探索作品 <ArrowUpRight size={14} />
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

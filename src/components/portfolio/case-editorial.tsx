@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { ReactNode } from "react";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { SiteNav, Contact } from "./home";
@@ -94,9 +95,9 @@ export function EditorialCase({
       <SiteNav />
       <article className="bq-case">
         <header className="bq-header">
-          <a className="yg-back" href="/#work">
+          <Link className="yg-back" href="/#work">
             <ArrowLeft size={16} /> 回到精選案例
-          </a>
+          </Link>
           <p className="yg-label">{label}</p>
           <h1>{title}</h1>
           <p className="bq-product">{name}</p>

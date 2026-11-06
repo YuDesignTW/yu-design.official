@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { EnergyCase } from "@/components/portfolio/energy-case";
 import { DisasterCase } from "@/components/portfolio/disaster-case";
 import { YulabCase } from "@/components/portfolio/yulab-case";
@@ -42,9 +43,9 @@ export default async function CasePage({
     <main className="yg">
       <SiteNav />
       <article className="yg-case">
-        <a className="yg-back" href="/#work">
+        <Link className="yg-back" href="/#work">
           <ArrowLeft size={16} /> 回到精選案例
-        </a>
+        </Link>
         <div className="yg-label">{s.tags.join(" / ")}</div>
         <h1>
           {s.name}

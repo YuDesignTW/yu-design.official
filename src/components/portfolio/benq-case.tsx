@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { SiteNav, Contact } from "./home";
 import "./benq-case.css";
@@ -58,9 +59,9 @@ export function BenqCase() {
       <SiteNav />
       <article className="bq-case">
         <header className="bq-header">
-          <a className="yg-back" href="/#work">
+          <Link className="yg-back" href="/#work">
             <ArrowLeft size={16} /> 回到精選案例
-          </a>
+          </Link>
           <p className="yg-label">BENQ / PRODUCT DEVELOPMENT · GO-TO-MARKET</p>
           <h1>
             從一個產品機會，
@@ -284,13 +285,13 @@ export function BenqCase() {
             了解 ideaCam 產品 <ArrowUpRight size={15} />
           </a>
         </div>
-        <a className="yg-next" href="/case-studies/design-system/">
+        <Link className="yg-next" href="/case-studies/design-system">
           <small>NEXT CASE</small>
           <h2>
             Brand Design System <ArrowUpRight />
           </h2>
           <p>用一套工作系統，推進十個品牌的設計</p>
-        </a>
+        </Link>
       </article>
       <Contact />
     </main>
