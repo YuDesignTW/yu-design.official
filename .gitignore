@@ -169,8 +169,65 @@ $RECYCLE.BIN/
 # Generated files
 /docs/api/
 
-# Large media files (use CDN or Git LFS instead)
+# 原始影音預設排除；public 網站素材於下方明確保留
 *.mov
 *.mp4
 *.avi
 *.mkv
+
+# 本機工作資料與工具設定（不屬於網站原始碼）
+/.claude/
+/.codex/
+/.agents/
+.env.*
+!.env.example
+!.env.sample
+
+# 研究原稿、設計來源與本機歸檔
+/archive/
+/archives/
+/raw/
+/source-materials/
+/research/
+/研究報告/
+/2026 Project/
+/CV/
+/content/
+/selected-cases/
+/notion-sync/
+/output/
+/screenshots/
+/captures/
+/docs/case-content-notes.txt
+*.ppt
+*.pptx
+*.key
+*.doc
+*.docx
+*.psd
+*.psb
+*.ai
+*.sketch
+*.fig
+*.zip
+*.7z
+*.rar
+*.pdf
+
+# 網站正式素材例外：圖片不做全域排除，履歷 PDF 與展示影片保留
+# 原始研究資料請放在上方列出的資料夾，不要放入 public
+!/public/**/*.pdf
+!/public/**/*.mp4
+!/public/**/*.mov
+!/public/**/*.avi
+!/public/**/*.mkv
+
+# 本機工具設定與舊工作區（不進發布 repository）
+/.openai/
+/official-site-work/
+/oddiciak-site-work/
+/personal-site-redesign/
+/brand-site/
+/review/
+/dist/
+/notion sync/

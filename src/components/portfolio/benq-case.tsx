@@ -7,11 +7,6 @@ const assets = "/images/cases/ideacam/";
 const imageSizes: Record<string, [number, number]> = {
   "ideacam-hero.png": [1142, 567],
   "ideacam-modes.png": [656, 379],
-  "ideacam-optics.png": [631, 277],
-  "enspire-annotation.png": [2048, 1192],
-  "enspire-auto-flip.png": [2048, 1226],
-  "enspire-picture-in-picture.png": [2048, 1226],
-  "enspire-perspective.png": [2048, 1226],
   "product-1.jpg": [507, 279],
   "product-2.jpg": [507, 380],
   "product-mkt-1.jpg": [507, 385],

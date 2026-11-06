@@ -1,3 +1,4 @@
+import "./yulab-case.css";
 import {
   EditorialCase,
   EditorialSection as Section,
@@ -172,11 +173,32 @@ export function YulabCase() {
           width={1920}
           height={1080}
         />
-        <p className="bq-section-intro">
-          吾食美學專案團隊獲 2025
-          創生之星金獎「地方新芽獎」肯定。我的工作涵蓋策略、品牌與產品設計、AI
-          工具開發，並與育苗場及外部專才合作完成場域實踐。
-        </p>
+        <section className="yl-award" aria-labelledby="yl-award-title">
+          <div className="yl-award-heading">
+            <p className="yg-label">2025 / AWARD RECOGNITION</p>
+            <h3 id="yl-award-title">
+              創生之星金獎<span>地方新芽獎</span>
+            </h3>
+            <p>
+              吾食美學專案團隊獲獎肯定。我以計畫主持人的角色，主導策略、品牌與產品設計、AI
+              工具開發，並與育苗場及外部專才合作，將構想落實到商品與場域。
+            </p>
+          </div>
+          <div className="yl-award-gallery">
+            <CaseFigure
+              src={assets + "gold-award.png"}
+              caption="頒獎現場｜吾食美學專案團隊獲 2025 創生之星金獎「地方新芽獎」。"
+              width={1477}
+              height={1108}
+            />
+            <CaseFigure
+              src={assets + "presentation.png"}
+              caption="成果發表｜以計畫主持人身分分享地方品牌轉型與產品實踐。"
+              width={611}
+              height={698}
+            />
+          </div>
+        </section>
         <p className="bq-note">
           依結案簡報，新品毛利率提高至
           80–90%，為育苗場新品成果，非整體企業毛利率或 YuLab

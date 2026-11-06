@@ -7,7 +7,7 @@ interface ServiceSectionProps {
 }
 
 export function ServiceSection({ serviceSectionRef }: ServiceSectionProps) {
-  const [activeServiceVideo, setActiveServiceVideo] = useState('/video/01_project_management.mp4')
+  const [activeServiceVideo, setActiveServiceVideo] = useState('/images/yulab/video/01_project_management.mp4')
   const [touchStart, setTouchStart] = useState(0)
   const [touchEnd, setTouchEnd] = useState(0)
 
@@ -89,7 +89,7 @@ export function ServiceSection({ serviceSectionRef }: ServiceSectionProps) {
         // 桌面版：如果點擊的不是list項目，重置為第一個影片
         if (!(e.target as HTMLElement).closest('li') && !(e.target as HTMLElement).closest('button')) {
           if (window.innerWidth >= 1024) { // lg breakpoint
-            setActiveServiceVideo('/video/01_project_management.mp4')
+            setActiveServiceVideo('/images/yulab/video/01_project_management.mp4')
           }
         }
       }}
